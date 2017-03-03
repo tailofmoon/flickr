@@ -5,7 +5,7 @@ flickr app
 
 
 ## API 키 얻기
-Flickr에서 API 키를 얻어야합니다. flickr.com에 로그인하려면 Yahoo! 계정이 있어야하며,없는 경우 Flickr에 가입해야합니다. Flickr 내에서 브라우저를 https://www.flickr.com/services/api/로 지정하십시오. API 키를 작성하려면 'APP 작성'으로 이동하십시오. 'API 키 요청'링크를 클릭하십시오.
+Flickr에서 API 키를 얻어야합니다. flickr.com에 로그인하려면 Yahoo! 계정이 있어야하며,없는 경우 Flickr에 가입해야합니다. Flickr 내에서 브라우저를 https://www.flickr.com/services/api/ 로 지정하십시오. API 키를 작성하려면 'APP 작성'으로 이동하십시오. 'API 키 요청'링크를 클릭하십시오.
 
 
 ## 앱 개요
@@ -15,7 +15,7 @@ Flickr에서 API 키를 얻어야합니다. flickr.com에 로그인하려면 Yah
 ## 메소드 이해하기
 Flickr API의 메소드는 XML 또는 JSON 형식의 데이터를 반환하는 끝점 (URL)을 구성합니다. 이 작업이 완료되면 많은 프로그래밍 언어를 사용하여 해당 데이터를 디코딩하여 사용자에게 제공 할 수 있습니다. 모든 Flickr API 메소드에는 몇 가지 인수가 전달됩니다. 일부는 필수이고 일부는 선택적입니다.
 
-flickr.photos.getRecent를 클릭하면 https://www.flickr.com/services/api/flickr.photos.getRecent.html로 이동합니다. 메소드에 대한 문서는 여기에서 볼 수 있습니다. 이 메소드에는 네 가지 유형의 인수를 사용할 수 있음을 알 수 있습니다. 그 중 'api_key'가 필요합니다.
+flickr.photos.getRecent를 클릭하면 https://www.flickr.com/services/api/flickr.photos.getRecent.html 로 이동합니다. 메소드에 대한 문서는 여기에서 볼 수 있습니다. 이 메소드에는 네 가지 유형의 인수를 사용할 수 있음을 알 수 있습니다. 그 중 'api_key'가 필요합니다.
 
 많은 옵션 인자를 'extra'로 전달하여 description, license, date_upload, date_taken, owner_name 등의 유용한 정보를 반환 할 수 있습니다.
 
@@ -35,7 +35,7 @@ Sp URL은 https://api.flickr.com/services/rest/?로 시작합니다. FLick'r API
 
 
 ## 프로그래밍 및 데이터 
-URL 요청한 데이터를 JSON 데이터로 디코딩하고 이를 사용자에게 제공해야합니다. 'https://www.flickr.com/services/api/'페이지는 'API 키트'섹션의 프로그래밍 언어 사용 목록을 제공합니다. 이 애플리케이션의 경우 Jquery를 사용하여 반환 된 JSON 데이터를 디코딩 한 다음 HTML 페이지에 추가합니다.
+URL 요청한 데이터를 JSON 데이터로 디코딩하고 이를 사용자에게 제공해야합니다. 'https://www.flickr.com/services/api/' 페이지는 'API 키트'섹션의 프로그래밍 언어 사용 목록을 제공합니다. 이 애플리케이션의 경우 Jquery를 사용하여 반환 된 JSON 데이터를 디코딩 한 다음 HTML 페이지에 추가합니다.
 
 
 
