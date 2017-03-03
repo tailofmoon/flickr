@@ -1,7 +1,8 @@
 # flickr
 flickr app
 
-## Using Flickr API you can retrieve a plethora of photographs and in turn, may create awesome applications. Moreover, you may upload your application to Flickr's marketplace APP Garden and make bucks and recognition too.
+## Intro
+Using Flickr API you can retrieve a plethora of photographs and in turn, may create awesome applications. Moreover, you may upload your application to Flickr's marketplace APP Garden and make bucks and recognition too.
 
 
 ## API 키 얻기
