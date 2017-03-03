@@ -14,30 +14,37 @@
 <body>
 	<a href="https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=24be533a84b043b194abf407b4e1db7c&per_page=10&format=json&nojsoncallback=1">flickr</a>
 	<section></section>
+
 	<script>
-		var url = "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=24be533a84b043b194abf407b4e1db7c&per_page=10&format=json&nojsoncallback=1";
+		$(function(){
 
-		var flickr = "https://c1.staticflickr.com";
+			// per_page = photo length
+			var url = "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=24be533a84b043b194abf407b4e1db7c&per_page=10&format=json&nojsoncallback=1";
+			var flickr = "https://c1.staticflickr.com";
 
-		$.getJSON(
-			url, 
-			function(data){
-				// 사진 객체를 읽어옴
-				$.each(data.photos.photo, function(i, photo){
-					var title = photo.title,
-						id = photo.id,
-						owner = photo.owner,
-						farm = photo.farm,
-						server = photo.server,
-						secret = photo.secret,
-						furl = 	flickr + "/" + farm + "/" + server + 
-								"/" + id + "_" + secret + "_t.jpg";
+			$.getJSON(
+				url, 
+				function(data){
+					// 사진 객체를 읽어옴
+					$.each(data.photos.photo, function(i, photo){
+						var title = photo.title,
+							id = photo.id,
+							owner = photo.owner,
+							farm = photo.farm,
+							server = photo.server,
+							secret = photo.secret,
+							furl = 	flickr + "/" + farm + "/" + server + 
+									"/" + id + "_" + secret + "_m.jpg";
 
-					console.log(furl);
-					$("section").append("<li><img src='" + furl + "'></li>");
-				});
-			}
-		);
+						console.log(furl);
+						$("section").append("<li><img src='" + furl + "'></li>");
+					});
+
+					$("section li").wrapAll("<ul></ul>");					
+				}				
+			);
+
+		});
 	</script>
 </body>
 </html>
